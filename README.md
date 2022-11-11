@@ -1,4 +1,4 @@
-# Spike for endrun project
+# Expo React-Native Spike (more like the Eiffel f.n tower)
 
 <p>
   <!-- iOS -->
