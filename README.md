@@ -9,6 +9,10 @@
 
 This demonstrates authentication , maps and markers (pins in map) , taking photo and uploads to firebase storage
 
+## demo
+
+- [map functionality , login authentication , photo taking / upload to firebase] (https://youtu.be/CTr6CrRcKAc)
+
 ## 🚀 How to use
 
 - go to firebase website ,
@@ -20,7 +24,7 @@ This demonstrates authentication , maps and markers (pins in map) , taking photo
 
 - clone the repository
 - cd into directory `cd login-app`
-- missing .env file , ask nicely and i may lend you mine ?
+- missing .env file , ask nicely and i may lend you mine on slack?
 
 ```
 FIREBASE_API_KEY=
@@ -44,6 +48,23 @@ for apple phones - maybe download expo app from apple store then use the camera
 
 - [Snack expo] https://snack.expo.dev/
 
+## android studio
+
+if been unfortunate to download this whale , get a tar file tar.gz
+~/Downloads/android-studio-2021.3.1.17-linux.tar.gz
+
+`cd ~/Downloads `
+`tar -xf android*gz`
+`sudo chown -Rv root:root android*`
+`sudo mv android* /opt`
+
+to start the android studio 
+`/opt/android-studio/bin/studio.sh` 
+
+- close any projects open
+- right hand corner be option virtual devices , vmd
+- choose pixel 3
+- press play button to start the emulator
 
 
 
