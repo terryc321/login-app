@@ -18,11 +18,14 @@ function HomeScreen({navigation}) {
     function findUsersOnMap(){
         navigation.navigate('Map');
     }
+
+    console.log(auth);
     
     
   return (
     <View style={styles.container}>
           <Text>Home screen!</Text>
+          <Text>User : { 123}</Text>
 
         <Button
           title={'Look on Map'}

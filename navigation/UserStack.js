@@ -12,7 +12,6 @@ import SignInScreen from '../screens/SignInScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 
 
-
 const Stack = createStackNavigator();
 
 export default function UserStack() {
