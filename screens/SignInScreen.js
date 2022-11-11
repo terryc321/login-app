@@ -6,7 +6,7 @@ import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 const auth = getAuth();
 
-const SignInScreen = () => {
+const SignInScreen = ({navigation}) => {
   const [value, setValue] = React.useState({
     email: '',
     password: '',
@@ -36,7 +36,10 @@ const SignInScreen = () => {
 
     // email and password
  return (
-      <View style={styles.container}>
+         <View style={styles.container}>
+
+       {!!value.error && <View style={styles.error}><Text>{value.error}</Text></View>}
+     
         <Input
           value={value.email}
      onChangeText={(email) => setValue({...value, email})}
@@ -78,6 +81,13 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     marginBottom: 10,
   },
+    error: {
+        marginTop: 10,
+        padding: 10,
+        color: '#fff',
+        backgroundColor: '#D54826FF',
+    },
+
 });
 
 
