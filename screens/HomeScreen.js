@@ -6,7 +6,6 @@ import { Button , StyleSheet, Text, View } from 'react-native';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 const auth = getAuth();
 
-
 // every screen in react-native gets navigation prop by default
 
 function HomeScreen({navigation}) {
