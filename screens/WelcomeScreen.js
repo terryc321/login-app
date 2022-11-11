@@ -4,18 +4,19 @@ import { StyleSheet, Text, View } from 'react-native';
 import { StackScreenProps } from '@react-navigation/stack';
 import { Button } from 'react-native-elements';
 
-const WelcomeScreen: React.FC<StackScreenProps<any>> = ({ navigation }) => {
+const WelcomeScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text>Welcome screen!</Text>
 
       <View style={styles.buttons}>
-        <Button title="Sign In" buttonStyle={styles.button} onPress={() => navigation.navigate('SignIn')} />
-        <Button title="Sign Up" type="outline" buttonStyle={styles.button} onPress={() => navigation.navigate('SignUp')} />
+        <Button title="Sign In" buttonStyle={styles.button} onPress={() => navigation.navigate('SignInScreen')} />
+        <Button title="Sign Up" type="outline" buttonStyle={styles.button} onPress={() => navigation.navigate('SignUpScreen')} />
       </View>
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {

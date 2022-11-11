@@ -19,7 +19,6 @@ function HomeScreen({navigation}) {
         navigation.navigate('Map');
     }
     
-
     
   return (
     <View style={styles.container}>
