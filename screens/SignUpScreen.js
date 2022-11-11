@@ -22,7 +22,7 @@ const SignUpScreen = ({navigation}) => {
             setValue({
                 ...value,
                 error: 'Email and password are mandatory.'
-            })
+            });
             return;
         }
 
@@ -33,7 +33,7 @@ const SignUpScreen = ({navigation}) => {
             setValue({
                 ...value,
                 error: error.message,
-            })
+            });
         }
     }
 
@@ -45,25 +45,13 @@ const SignUpScreen = ({navigation}) => {
        {!!value.error && <View style={styles.error}><Text>{value.error}</Text></View>}
 
            
-        <Input
-          value={value.email}
-     onChangeText={(email) => setValue({...value, email})}
-          placeholder={'Email address'}
-          style={styles.input}
-        />
-        <Input
-          value={value.password}
-          onChangeText={(password) => setValue({...value, password})}
-          placeholder={'Password'}
-          secureTextEntry={true}
-          style={styles.input}
-        />
+        <Input value={value.email}  onChangeText={(email) => setValue({...value, email})}
+           placeholder={'Email address'} style={styles.input} />
+               
+        <Input value={value.password} onChangeText={(password) => setValue({...value, password})}
+          placeholder={'Password'} secureTextEntry={true} style={styles.input} />
         
-        <Button
-          title={'SignUp'}
-          style={styles.input}
-          onPress={signUp}
-        />
+        <Button title={'SignUp'} style={styles.input} onPress={signUp} />
       </View>
     );
 
