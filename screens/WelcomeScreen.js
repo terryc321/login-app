@@ -10,8 +10,8 @@ const WelcomeScreen: React.FC<StackScreenProps<any>> = ({ navigation }) => {
       <Text>Welcome screen!</Text>
 
       <View style={styles.buttons}>
-        <Button title="Sign in" buttonStyle={styles.button} onPress={() => navigation.navigate('Sign In')} />
-        <Button title="Sign up" type="outline" buttonStyle={styles.button} onPress={() => navigation.navigate('Sign Up')} />
+        <Button title="Sign In" buttonStyle={styles.button} onPress={() => navigation.navigate('SignIn')} />
+        <Button title="Sign Up" type="outline" buttonStyle={styles.button} onPress={() => navigation.navigate('SignUp')} />
       </View>
     </View>
   );

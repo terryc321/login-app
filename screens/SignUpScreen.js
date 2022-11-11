@@ -7,6 +7,7 @@ import { StackScreenProps } from '@react-navigation/stack';
 
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 
+
 const auth = getAuth();
 
 const SignUpScreen = ({navigation}) => {
@@ -42,7 +43,8 @@ const SignUpScreen = ({navigation}) => {
          <View style={styles.container}>
 
        {!!value.error && <View style={styles.error}><Text>{value.error}</Text></View>}
-     
+
+           
         <Input
           value={value.email}
      onChangeText={(email) => setValue({...value, email})}
@@ -67,6 +69,7 @@ const SignUpScreen = ({navigation}) => {
 
     
 }
+
 
 const styles = StyleSheet.create({
     container: {

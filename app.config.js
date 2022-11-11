@@ -11,7 +11,7 @@ export default {
    
   "expo": {
     "name": "login-app",
-    "icon": "./images/spiderman.ico",
+    "icon": "./images/spiderman.png",
     "version": "1.0.0",
     "slug": "login-app",
     "version": "1.0.0",
@@ -30,7 +30,7 @@ export default {
        "versionCode": 1
    },   
       "extra": {
-          "eas": {
+          "eas": {              
         "projectId": "c8e44483-e593-4dc2-b6dd-2e7f341cf50f"
           },
       firebaseApiKey: process.env.FIREBASE_API_KEY,
