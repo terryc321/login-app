@@ -24,17 +24,6 @@ This demonstrates authentication , maps and markers (pins in map) , taking photo
 
 - clone the repository
 - cd into directory `cd login-app`
-- missing .env file , ask nicely and i may lend you mine on slack?
-
-```
-FIREBASE_API_KEY=
-FIREBASE_AUTH_DOMAIN=
-FIREBASE_PROJECT_ID=
-FIREBASE_STORAGE_BUCKET=
-FIREBASE_MESSAGING_SENDER_ID=
-FIREBASE_APP_ID=
-```
-
 - run `npm install`
 - run `npm start`
 
