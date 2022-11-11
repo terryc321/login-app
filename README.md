@@ -40,6 +40,10 @@ download expo app from google playstore for android phones
 
 for apple phones - maybe download expo app from apple store then use the camera 
 
+## development
+
+- [Snack expo] https://snack.expo.dev/
+
 
 
 
