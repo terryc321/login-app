@@ -20,9 +20,12 @@ This demonstrates authentication , maps and markers (pins in map) , taking photo
 - setup project as web application
 - enable authentication email ,
 - enable storage
+- inside firebase project settings , scroll down to bottom page , should see something like this
 
 
 ```js
+// this code is in config/firebase.js file of this repo , replace with your own settings
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
