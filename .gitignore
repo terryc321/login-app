@@ -69,5 +69,6 @@ hidden/
 android/
 
 *.webm
+gradle.properties
 
 
