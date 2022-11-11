@@ -30,9 +30,10 @@ function HomeScreen({navigation}) {
           style={styles.input}
       onPress={findUsersOnMap}  />
 
-
-      <Button title="Take a Photo" onPress={() => navigation.navigate('Photo')} />
       
+      <Button title="List Activities" onPress={() => navigation.navigate('List')} />      
+
+      <Button title="Take a Photo" onPress={() => navigation.navigate('Photo')} />      
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
       <Button title="Go back" onPress={() => navigation.goBack()} />
 

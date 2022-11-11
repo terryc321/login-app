@@ -10,6 +10,7 @@ import MapScreen from '../screens/MapScreen';
 import PhotoScreen from '../screens/PhotoScreen';
 import SignInScreen from '../screens/SignInScreen';
 import SignUpScreen from '../screens/SignUpScreen';
+import ListScreen from '../screens/ListScreen';
 
 
 const Stack = createStackNavigator();
@@ -24,6 +25,7 @@ export default function UserStack() {
           <Stack.Screen name="Photo"  component={PhotoScreen} />
           <Stack.Screen name="Sign In" component={SignInScreen} />
           <Stack.Screen name="Sign Up" component={SignUpScreen} />
+          <Stack.Screen name="List" component={ListScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
