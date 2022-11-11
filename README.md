@@ -31,17 +31,17 @@ FIREBASE_MESSAGING_SENDER_ID=
 FIREBASE_APP_ID=
 ```
 
-
-
 - run `npm install`
 - run `npm start`
 
 should see a QR code that can be scanned by android or ios phone
 
-download expo app from google playstore 
+download expo app from google playstore for android phones
 
-- Take a new picture or upload one from your library
-- See the image being rendered from Firebase
+for apple phones - maybe download expo app from apple store then use the camera 
+
+
+
 
 ## 📝 Notes
 
