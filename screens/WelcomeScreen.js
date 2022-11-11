@@ -10,8 +10,8 @@ const WelcomeScreen = ({navigation}) => {
       <Text>Welcome screen!</Text>
 
       <View style={styles.buttons}>
-        <Button title="Sign In" buttonStyle={styles.button} onPress={() => navigation.navigate('SignInScreen')} />
-        <Button title="Sign Up" type="outline" buttonStyle={styles.button} onPress={() => navigation.navigate('SignUpScreen')} />
+        <Button title="Sign In" buttonStyle={styles.button} onPress={() => navigation.navigate('Sign In')} />
+        <Button title="Sign Up" type="outline" buttonStyle={styles.button} onPress={() => navigation.navigate('Sign Up')} />
       </View>
     </View>
   );

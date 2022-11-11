@@ -23,8 +23,8 @@ export default function UserStack() {
           <Stack.Screen name="Home"   component={HomeScreen} />
           <Stack.Screen name="Map"    component={MapScreen} />
           <Stack.Screen name="Photo"  component={PhotoScreen} />
-          <Stack.Screen name="SignIn" component={SignInScreen} />
-          <Stack.Screen name="SignUp" component={SignUpScreen} />
+          <Stack.Screen name="Sign In" component={SignInScreen} />
+          <Stack.Screen name="Sign Up" component={SignUpScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
