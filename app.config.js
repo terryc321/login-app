@@ -8,7 +8,6 @@ export default {
   "updates": {
     "url": "https://u.expo.dev/c8e44483-e593-4dc2-b6dd-2e7f341cf50f"
   },
-   
   "expo": {
     "name": "login-app",
     "icon": "./images/spiderman.png",
