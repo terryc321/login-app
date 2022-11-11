@@ -23,13 +23,17 @@ const SignInScreen = ({navigation}) => {
     }
 
     try {
-      await signInWithEmailAndPassword(auth, value.email, value.password);
+        await signInWithEmailAndPassword(auth, value.email, value.password);        
     } catch (error) {
       setValue({
         ...value,
         error: error.message,
       });
+        return;  
     }
+
+     //successful sign in
+      navigation.navigate("Home");            
   }
 
     

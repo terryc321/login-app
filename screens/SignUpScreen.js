@@ -16,6 +16,7 @@ const SignUpScreen = ({navigation}) => {
         password: '',
         error: ''
     });
+
     
     async function signUp() {
         if (value.email === '' || value.password === '') {
@@ -28,13 +29,17 @@ const SignUpScreen = ({navigation}) => {
 
         try {
             await createUserWithEmailAndPassword(auth, value.email, value.password);
-            navigation.navigate('Sign In');
         } catch (error) {
             setValue({
                 ...value,
                 error: error.message,
             });
+            return;
         }
+        
+
+        //successful sign up
+        navigation.navigate('Home');    
     }
 
 
@@ -42,7 +47,7 @@ const SignUpScreen = ({navigation}) => {
        return (
          <View style={styles.container}>
 
-       {!!value.error && <View style={styles.error}><Text>{value.error}</Text></View>}
+       {value.error && <View style={styles.error}><Text>{value.error}</Text></View>}
 
            
         <Input value={value.email}  onChangeText={(email) => setValue({...value, email})}
