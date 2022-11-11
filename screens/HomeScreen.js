@@ -23,7 +23,7 @@ function HomeScreen({navigation}) {
   return (
     <View style={styles.container}>
           <Text>Home screen!</Text>
-          <Text>User : { 123}</Text>
+          <Text>User : { auth.currentUser.email }</Text>
 
         <Button
           title={'Look on Map'}

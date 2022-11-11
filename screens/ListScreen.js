@@ -1,26 +1,18 @@
 import React from 'react';
-import {useState , useEffect} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { Alert , TextInput , Input, Button } from 'react-native-elements';
+import { TextInput , Input, Button } from 'react-native-elements';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 const auth = getAuth();
 
-const SignInScreen = ({navigation}) => {
-  const [value, setValue] = useState({
+const ListScreen = ({navigation}) => {
+  const [value, setValue] = React.useState({
     email: '',
     password: '',
     error: ''
   });
-    const [refresh,setRefresh] = useState(true);
-    const [after,setAfter] = useState(null);
-    
-  // trying to set input fields to some default so easier to debug + develop on  
-  useEffect(() => {    
-  },[refresh]);
-    
-    
+
   async function signIn() {
     if (value.email === '' || value.password === '') {
       setValue({
@@ -44,25 +36,6 @@ const SignInScreen = ({navigation}) => {
       navigation.navigate("Home");            
   }
 
-
-    async function fastSignIn(email , password) {
-        setValue((cur) => {return {
-            ...cur ,
-            email : email ,
-            password : password            
-        }});
-        // document.getElementById("email").value = email;
-        // document.getElementById("password").value = password;        
-        // console.log("email = " ,email);
-        // console.log("password = " ,password);
-
-        // trigger refresh , then call signIn
-        //setRefresh(!refresh);
-        // wait 3 seconds then sign in ?
-        //setTimeout(signIn , 3000);
-        
-        
-    }
     
 
     // email and password
@@ -72,15 +45,13 @@ const SignInScreen = ({navigation}) => {
        {!!value.error && <View style={styles.error}><Text>{value.error}</Text></View>}
      
         <Input
-     value={value.email}
-     id={"email"}
+          value={value.email}
      onChangeText={(email) => setValue({...value, email})}
           placeholder={'Email address'}
           style={styles.input}
         />
         <Input
-     value={value.password}
-     id={"password"}
+          value={value.password}
           onChangeText={(password) => setValue({...value, password})}
           placeholder={'Password'}
           secureTextEntry={true}
@@ -91,21 +62,7 @@ const SignInScreen = ({navigation}) => {
           title={'Login'}
           style={styles.input}
           onPress={signIn}
-         />
-
-    <Button
-          title={'FastLogin-terry-dev'}
-          style={styles.input}
-     onPress={() => fastSignIn("terry.cadd@gmail.com" , "password")}
-         />
-
-    <Button
-          title={'FastLogin-george5-dev'}
-          style={styles.input}
-     onPress={() => fastSignIn("george5@gmail.com","george5")}
-         />
-
-     
+        />
       </View>
     );
 
@@ -139,6 +96,6 @@ const styles = StyleSheet.create({
 
 
 
-export default SignInScreen;
+export default ListScreen;
 
 
