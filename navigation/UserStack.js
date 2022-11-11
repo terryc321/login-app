@@ -17,7 +17,7 @@ const Stack = createStackNavigator();
 export default function UserStack() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Welcome">
+      <Stack.Navigator initialRouteName="Home">
           <Stack.Screen name="Welcome"   component={WelcomeScreen} />
           <Stack.Screen name="Home"   component={HomeScreen} />
           <Stack.Screen name="Map"    component={MapScreen} />
@@ -28,5 +28,8 @@ export default function UserStack() {
     </NavigationContainer>
   );
 }
+
+
+
 
 
