@@ -66,7 +66,10 @@ for apple phones - maybe download expo app from apple store then use the camera
 
 ## android studio
 
-if been unfortunate to download this whale , get a tar file tar.gz
+lets assume downloaded this through google chrome 
+
+there will be a file named something like
+
 ~/Downloads/android-studio-2021.3.1.17-linux.tar.gz
 
 ```bash
