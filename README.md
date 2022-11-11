@@ -1,4 +1,4 @@
-# Firebase Storage Upload Example
+# Spike for endrun project
 
 <p>
   <!-- iOS -->
@@ -7,12 +7,39 @@
   <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
 </p>
 
-This example demonstrates how you can upload images (and other files) to Firebase Storage. Read App.js for more info, in particular the `uploadImageAsync` function.
+This demonstrates authentication , maps and markers (pins in map) , taking photo 
 
 ## 🚀 How to use
 
-- Run `yarn` or `npm install`
-- Run `yarn start` or `npm run start` to try it out.
+- go to firebase website ,
+- configure firebase using web interface 
+- setup project as web application
+- enable authentication email ,
+- enable storage
+
+
+- clone the repository
+- cd into directory `cd login-app`
+- missing .env file , ask nicely and i may lend you mine ?
+
+```
+FIREBASE_API_KEY=
+FIREBASE_AUTH_DOMAIN=
+FIREBASE_PROJECT_ID=
+FIREBASE_STORAGE_BUCKET=
+FIREBASE_MESSAGING_SENDER_ID=
+FIREBASE_APP_ID=
+```
+
+
+
+- run `npm install`
+- run `npm start`
+
+should see a QR code that can be scanned by android or ios phone
+
+download expo app from google playstore 
+
 - Take a new picture or upload one from your library
 - See the image being rendered from Firebase
 
@@ -20,3 +47,4 @@ This example demonstrates how you can upload images (and other files) to Firebas
 
 - [Firebase Storage API](https://firebase.google.com/docs/storage/web/upload-files)
 - [Expo Firebase guide](https://docs.expo.dev/versions/latest/guides/using-firebase/)
+
