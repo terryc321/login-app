@@ -1,4 +1,4 @@
-# Expo React-Native Spike (more like the Eiffel f.n tower)
+# Expo React-Native Spike 
 
 <p>
   <!-- iOS -->
@@ -20,21 +20,37 @@ This demonstrates authentication , maps and markers (pins in map) , taking photo
 - setup project as web application
 - enable authentication email ,
 - enable storage
+- inside firebase project settings , scroll down to bottom page , should see something like this
 
+
+```js
+// this code is in config/firebase.js file of this repo , replace with your own settings
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB0pr1FTrmTQ20qVjJLtQAiNvPKFCvjRLA",
+  authDomain: "demo1-10664.firebaseapp.com",
+  projectId: "demo1-10664",
+  storageBucket: "demo1-10664.appspot.com",
+  messagingSenderId: "947876007835",
+  appId: "1:947876007835:web:2348aeffd8eb0611f71b3e",
+  measurementId: "G-J17HS9KG1Z"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+```
 
 - clone the repository
 - cd into directory `cd login-app`
-- missing .env file , ask nicely and i may lend you mine on slack?
-
-```
-FIREBASE_API_KEY=
-FIREBASE_AUTH_DOMAIN=
-FIREBASE_PROJECT_ID=
-FIREBASE_STORAGE_BUCKET=
-FIREBASE_MESSAGING_SENDER_ID=
-FIREBASE_APP_ID=
-```
-
 - run `npm install`
 - run `npm start`
 
@@ -50,14 +66,18 @@ for apple phones - maybe download expo app from apple store then use the camera
 
 ## android studio
 
-if been unfortunate to download this whale , get a tar file tar.gz
+lets assume downloaded this through google chrome 
+
+there will be a file named something like
+
 ~/Downloads/android-studio-2021.3.1.17-linux.tar.gz
 
-`cd ~/Downloads `
-`tar -xf android*gz`
-`sudo chown -Rv root:root android*`
-`sudo mv android* /opt`
-
+```bash
+cd ~/Downloads 
+tar -xf android*gz
+sudo chown -Rv root:root android*
+sudo mv android* /opt
+```
 to start the android studio 
 `/opt/android-studio/bin/studio.sh` 
 
