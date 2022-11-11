@@ -19,8 +19,7 @@ function HomeScreen({navigation}) {
     }
 
     console.log(auth);
-    
-    
+        
   return (
     <View style={styles.container}>
           <Text>Home screen!</Text>
