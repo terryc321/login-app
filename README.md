@@ -1,4 +1,4 @@
-# Expo React-Native Spike (more like the Eiffel f.n tower)
+# Expo React-Native Spike 
 
 <p>
   <!-- iOS -->
