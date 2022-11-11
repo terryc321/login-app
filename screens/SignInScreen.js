@@ -105,6 +105,13 @@ const SignInScreen = ({navigation}) => {
      onPress={() => fastSignIn("george5@gmail.com","george5")}
          />
 
+    <Button
+          title={'FastLogin-nancy77-dev'}
+          style={styles.input}
+     onPress={() => fastSignIn("nancy77@gmail.com","nancy77")}
+         />
+
+     
      
       </View>
     );
