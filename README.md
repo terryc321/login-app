@@ -21,6 +21,29 @@ This demonstrates authentication , maps and markers (pins in map) , taking photo
 - enable authentication email ,
 - enable storage
 
+``js
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB0pr1FTrmTQ20qVjJLtQAiNvPKFCvjRLA",
+  authDomain: "demo1-10664.firebaseapp.com",
+  projectId: "demo1-10664",
+  storageBucket: "demo1-10664.appspot.com",
+  messagingSenderId: "947876007835",
+  appId: "1:947876007835:web:2348aeffd8eb0611f71b3e",
+  measurementId: "G-J17HS9KG1Z"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+``
 
 - clone the repository
 - cd into directory `cd login-app`
